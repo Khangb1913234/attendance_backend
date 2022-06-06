@@ -13,5 +13,5 @@ mongoose.connect(config.db.uri)
     })
     
 app.listen(process.env.PORT, function(){
-    console.log(`Port: ${process.env.PORT}`)
+    console.log(`Port:`)
 })

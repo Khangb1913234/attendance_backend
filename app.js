@@ -12,7 +12,7 @@ app.get("/", function(req, res){
     res.json({message: "Thai Khung"})
 })
 
-app.test("/test", function(req, res){
+app.get("/test", function(req, res){
     res.json({message: "Test"})
 })
 // setupStudentRoutes(app)
