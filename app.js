@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended: true}))
 app.get("/", function(req, res){
     res.json({message: "Thai Khung"})
 })
-setupStudentRoutes(app);
-setupNotificationRoutes(app)
+// setupStudentRoutes(app)
+// setupNotificationRoutes(app)
 
 module.exports = app
