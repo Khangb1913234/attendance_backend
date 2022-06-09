@@ -3,6 +3,7 @@ const cors = require("cors")
 const app = express()
 const setupStudentRoutes = require("./app/routes/student.route");
 const setupNotificationRoutes = require("./app/routes/notification.route")
+const setupAuthRoutes = require("./app/routes/auth.route");
 
 app.use(cors())
 app.use(express.json())
@@ -17,5 +18,6 @@ app.get("/test", function(req, res){
 })
 setupStudentRoutes(app)
 setupNotificationRoutes(app)
+setupAuthRoutes(app);
 
 module.exports = app
