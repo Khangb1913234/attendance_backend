@@ -8,7 +8,7 @@ mongoose.connect(config.db.uri)
         console.log("Connect to the local database")
     })
     .catch(function(err){
-        console.log("Can not connect to the local database", err)
+        console.log("Cannot connect to the local database", err)
         process.exit()
     })
     
